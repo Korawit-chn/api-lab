@@ -5,7 +5,7 @@
 - Step 0.3, status code of the request without a token: 401 Unauthorized
 - Step 0.4, the name of your pizza: The Mammoth Calzone
 - Step 0.12, results of the three runs without a session (optional): All fail with 401
-- Step 0.16, blocks of "how many of the three tools are excluded":
+- Step 0.16, blocks of "how many of the three tools are excluded": | 0 tool: {[]} | 1 tool: {["Knife"]} | 2 tools: {["Knife", "Scissor"]} | 3 tools: {["Knife", "Pizza cutter", "Scissors"]} | The test only cover 1 tool block
 
 ## Defect report
 - Title:
