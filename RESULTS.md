@@ -15,14 +15,14 @@
 - Severity: Medium
 
 ## Part A
-- Step A4, status codes when the other user reads, changes and deletes:
+- Step A4, status codes when the other user reads, changes and deletes: reads=404, change=400, delete=400
 
 ## Part B
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
+1. the load balancer losing a user and a crash with a 500, unit test with stubs are fast
+2. So the test's data cannot be changed; Will apply for create new cart or booking for each test
+3. The AWSALB cookie keeps every request on the same server; in Step 0.12 all three runs failed with 401.
+4. All three tools excluded; a 500 with an empty body gives the app no message, and xfail keeps the defect visible.
+5. Base choice needs 1 + 2 + 3 + 1 + 2 = 9 tests, and all combinations needs 3 × 4 × 2 × 3 = 72.
+6. In part A
+7. A list of rating data return which is a defect since stranger can read other data
+8. API tests check status codes and server rules better; only web page tests check what the user sees.
