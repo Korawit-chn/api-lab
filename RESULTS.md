@@ -8,11 +8,11 @@
 - Step 0.16, blocks of "how many of the three tools are excluded": | 0 tool: {[]} | 1 tool: {["Knife"]} | 2 tools: {["Knife", "Scissor"]} | 3 tools: {["Knife", "Pizza cutter", "Scissors"]} | The test only cover 1 tool block
 
 ## Defect report
-- Title:
-- Request:
-- Expected result:
-- Actual result:
-- Severity:
+- Title: All three tools excluded return 500 instead of 400
+- Request: POST https://quickpizza.grafana.com/api/pizza with header `Authorization: token abcdef0123456789` and body `{"excludedTools":["Knife", "Pizza cutter", "Scissors"]}`
+- Expected result: 400
+- Actual result: 500
+- Severity: Medium
 
 ## Part A
 - Step A4, status codes when the other user reads, changes and deletes:
